@@ -15,8 +15,8 @@ D - Dependency inversion principle (DIP)
 -> A class should have onle one reason to change
 -> A class should do only one thing
 
-Real world ex: If only single Remote is gettin used for Tv, Ac or any other appliances then that remove must be having so much functinality and 
-    because of that it will be very difficult to manage or fix if anything break
+Real world ex: If only single Remote is gettin used for Tv, Ac or any other appliances then that remote must be having so much functinality and 
+    because of that it will be very difficult to manage or fix if anything breaks
 
 Ex:
     Problem: 
@@ -68,3 +68,19 @@ Ex:
 ![alt text](Screenshots/LSP_solution.png)
 
 Path to code - SOLID\LSP\LSP.java
+
+4. ISP (Interface Segregation Principle):
+-> Many client specific interface are better then one general pupose interface.
+-> client should not be forced to implement methods they don't need.
+
+![alt text](Screenshots/ISP_Problem.png)
+
+![alt text](Screenshots/ISP_Solution.png)
+
+5. DIP (Dependency inversion principle):
+-> High level module should not depend on low level module but rather both should depend on abstraction.
+
+    Suppose we have an Application which interacts with DB, here Application is High level module and DB is low level module
+![alt text](Screenshots/DIP_Problem.png)
+
+![alt text](Screenshots/DIP_Solution.png)
